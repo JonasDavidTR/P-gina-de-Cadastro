@@ -1,4 +1,4 @@
-from src.__init__ import app
+from __init__ import app
 from Bancodados import db, conexaodb
 from flask import render_template, request
 
@@ -22,8 +22,8 @@ def home():
 
         if nome == " " or nome == None:
             mensagem = "Nome de usuário inválido. Tente novamente!"
-            return render_template('index.html')
-        
+            return render_template('index.html', mensagem=mensagem)
+
 
         if senha == confirmarSenha:
             if conexaodb.con() == None:

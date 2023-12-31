@@ -12,6 +12,7 @@ def home():
             nome = dados_usuarios.get('nome')
             senha = dados_usuarios.get('senha')
             email = dados_usuarios.get('email')
+            print(nome)
         else:
             # Dados formulário
             nome = request.form.get('nome')

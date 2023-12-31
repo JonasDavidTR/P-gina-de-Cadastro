@@ -62,8 +62,8 @@
 <script>
 
   function onSignIn(googleUser) {
-    var profile = googleUser.getBasicProfile();
-    var dadosUsuario = {
+    let profile = googleUser.getBasicProfile();
+    let dadosUsuario = {
             id: profile.getId(),
             nome: profile.getName(),
             imageUrl: profile.getImageUrl(),

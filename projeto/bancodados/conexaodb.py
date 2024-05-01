@@ -26,16 +26,3 @@ def con():
 
 def closedb(con):
     return con.close()
-
-
-# vcon = con()
-# cursor = vcon.cursor()
-
-# sql = "SELECT * FROM `users`;"
-# cursor.execute(sql)
-# res = cursor.fetchall()
-
-# print(res)
-
-# if vcon:
-#     closedb(vcon)

@@ -21,7 +21,7 @@ def home():
             confirmarSenha = request.form.get('confirmarSenha')
 
 
-        if nome == " " or nome == None:
+        if not nome or nome.strip() == "":
             mensagem = "Nome de usuário inválido. Tente novamente!"
             return render_template('index.html', mensagem=mensagem)
 

@@ -8,7 +8,7 @@ def home():
     if request.method == 'POST':
         if request.headers.get('Content-Type') == 'application/json':
             # Dados google
-            dados_usuarios = request.json()
+            dados_usuarios = request.get.json()
             nome = dados_usuarios.get('nome')
             senha = dados_usuarios.get('senha')
             email = dados_usuarios.get('email')
